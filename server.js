@@ -22,9 +22,9 @@ app.use((req, res, next) => {
 })
 
 // Maintenance Middleware
-app.use((req, res, next) => {
-    res.render('maintenance.hbs');
-})
+// app.use((req, res, next) => {
+//     res.render('maintenance.hbs');
+// })
 // registring helper
 
 hbs.registerHelper('getCurrentYear', () => {
