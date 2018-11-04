@@ -60,6 +60,13 @@ app.get('/about', (req, res) => {
     })
 })
 
+// Projects Route
+
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        theTitle: "Projects Page"
+    })
+})
 
 // Bad route
 app.get('/bad', (req, res) => {
