@@ -2,6 +2,9 @@ const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
 
+// for heroku port // in local 80 default
+const port = process.env.PORT || 80;
+
 const app = express();
 
 // Awesome Middleware Feature for extra security
@@ -71,6 +74,6 @@ app.get('/bad', (req, res) => {
 
 // Starting web server [Configuring ports]
 
-app.listen(80, () => {
-    console.log("Server Running on port 80");
+app.listen(port, () => {
+    console.log(`Server Running on port ${port}`);
 });
